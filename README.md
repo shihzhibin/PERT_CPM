@@ -22,7 +22,7 @@ Author:PinoyStat  ,   Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs
     <li>
       <a href="#the-model">python</a>
        <ul>
-        <li><a href="#Input Package">Package</a></li>
+        <li><a href="#Package">Package</a></li>
         <li><a href="#Object">Define a class object </a></li>
         <li><a href="#Function">Define Function </a></li>
         <li><a href="#Determine the critical path from the result">Output result</a></li>
@@ -33,7 +33,7 @@ If you are faced with many tasks at work, how to decide which tasks to perform f
 > __PERT__ is a method of analyzing the tasks involved in completing a given project, especially the time needed to complete each task and to identify the minimum time needed to complete the total project. It incorporates uncertainty by making it possible to schedule a project while not knowing precisely the details and durations of all the activities.On the otherhand PERT and CPM are complementary tools, because __CPM__ employs one time estimation and one cost estimation for each activity; __PERT__ may utilize three time estimates (__optimistic, expected, and pessimistic__) and no costs for each activity.
  
 # __The Model__
-## __Input Package__
+## __Package__
 ```python 
 #Download package
 import numpy as np
