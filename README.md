@@ -8,7 +8,7 @@
 |  施智臏      | ZHI-BIN SHIH     | [https://www.linkedin.com/in/zhibin-shih-9a0a711a9/](https://www.linkedin.com/in/zhibin-shih-9a0a711a9/)     
 |  Mr.Tsai    |  Louie Tsai       | 
 ### **Reference**
-Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs  Author:PinoyStat
+Author:PinoyStat  ,   Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs  
 ## Tutorial of the PERT_CPM
 <details open="open">
   <summary><b>Table of Contents</b></summary>
@@ -26,6 +26,7 @@ Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs  Author:PinoyStat
         <li><a href="#Object">Define a class object named task</a></li>
         <li><a href="#Function">Use define Function to input data or compute dataframe </a></li>
         <li><a href="#Output result">Determine the critical path from the result</a></li>
+         
 # __Introduction__
 If you are faced with many tasks at work, how to decide which tasks to perform first.Searching online resources suggest PERT(Program Evaluation and Review Technique) to schedule tasks.The program evaluation and review technique (PERT) is a statistical tool used in project management, which was designed to analyze and represent the tasks involved in completing a given project.
 ## __PERT_CPM__
@@ -38,7 +39,8 @@ If you are faced with many tasks at work, how to decide which tasks to perform f
 import numpy as np
 import pandas as pd  
 import re
-import os        
+import os 
+         
 ## __Object__         
 ```python      
 #define a class object named task:
