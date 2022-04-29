@@ -4,9 +4,9 @@
 ### **Team Member**    
 
 |     編輯者       |    暱稱     |Email                                                           |
-| :-----------:|:-----------:   |:---------------------------------------------------------------------------------------: |
-|  施智臏      | ZHI-BIN SHIH     |[shih.zhi.bin@gmail.com](shih.zhi.bin@gmail.com)     
-|  Mr.Tsai    |  Louie Tsai       |[eru085730@gmail.com](eru085730@gmail.com)
+| :-----------:|:-----------:  |:---------------------------------------------------------------------------------------: |
+|  施智臏      | ZHI-BIN SHIH  |[shih.zhi.bin@gmail.com](shih.zhi.bin@gmail.com)     
+|  Mr.Tsai    |  Louie Tsai   |[eru085730@gmail.com](eru085730@gmail.com)
 ### **Reference**
 Author:PinoyStat  ,   Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs  
 ## Tutorial of the PERT_CPM
