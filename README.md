@@ -80,7 +80,7 @@ def readData(excelFile):
          
 `Most likely time`: the best estimate of the time required to accomplish an activity (`m`) , assuming everything proceeds as normal.
       
-`Expected time`: the best estimate of the time required to accomplish an activity (te) . 
+`Expected time`: the best estimate of the time required to accomplish an activity (`te`) . 
          
 <p style="text-align:center">
   <img src="./picture/1.PNG"/>
@@ -109,7 +109,7 @@ __Determining ES EF with Forwardpass__
          
 `EF(EarlyFinish)`= `ES` + `D`(Duration)
 
-`ES(EarlyStart)`= `Max(EF)` -> Maximum `ES` of all pre-jobs
+`ES(EarlyStart)`= `Max(EF)` -> Maximum `EF` of all pre-jobs
 
 ```python         
 def forwardPass(taskObject):
