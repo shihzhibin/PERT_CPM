@@ -130,3 +130,94 @@ def forwardPass(taskObject):
             
         task.earlyfinish = task.earlyStart + task.duration
 ```   
+
+__Determining Ls LF with Forwardpass__      
+         
+         
+```python
+def backwardPass(taskObject):
+    pred = []
+    eF = []
+    
+    
+    for task in taskObject:
+        if type(task.predecessors) == str :
+            for j in task.predecessors:
+                pattern = re.compile(r'[A-Z]')
+                match = pattern.finditer(j)
+                for r in match:
+                    pred.append(j)
+                    for m in taskObject:
+                        if m.activity == j:
+                            m.successors.append(task.activity)
+        eF.append(task.earlyfinish)
+    
+    for task in reversed(taskObject):
+        if task.activity not in pred:
+            task.lastfinish = max(eF)
+        else:
+            minLs = []
+            for x in task.successors:
+                for t in (taskObject):
+                    if t.activity == x:
+                        minLs.append(t.lastStart)
+            task.lastfinish = min(minLs)
+            del minLs
+        task.lastStart = task.lastfinish - task.duration
+```  
+                  
+__Caculate the slack( By computeSlack funtion)__
+         
+```python
+def slack(taskObject):
+    for task in taskObject:
+        task.computeSlack()
+``` 
+         
+__Update Dataframe__ 
+         
+```python        
+def updateDataframe(df,TaskObject):
+    df2 = pd.DataFrame({
+        'ACTIVITY':df["ACTIVITY"],
+        'PREDECESSORS': df ["PREDECESSORS"],
+        'OPT':df["OPT"],
+        'MOST':df["MOST"],
+        'PESS':df["PESS"],
+        'DURATION':df["DURATION"],
+        "ES":pd.Series([task.earlyStart for task in TaskObject]),
+        "EF":pd.Series([task.earlyfinish for task in TaskObject]),
+        "LS":pd.Series([task.lastStart for task in TaskObject]),
+        "LF":pd.Series([task.lastfinish for task in TaskObject]),
+        "SLACK":pd.Series([task.slack for task in TaskObject]),
+        "CRITICAL?":pd.Series([task.critical for task in TaskObject])})
+    return (df2)     
+```          
+         
+__Main code__
+         
+```python      
+def main():
+    pd.set_option('display.width',1000)
+    os.system("clear")
+    df = readData("network.csv")
+    print("Loaded data:")
+    print(df)
+    
+    df = computeDuration(df)
+    taskObject = creatTask(df)
+    
+    forwardPass(taskObject)
+    backwardPass(taskObject)
+    slack(taskObject)
+    
+    finaldf =updateDataframe(df,taskObject)
+    print("\nResults:")
+    print(finaldf)
+    
+    print("\nResult saved to pertcpm.csv\n")
+    finaldf.to_csv("pertcpm.csv",index = False)
+#run the program:
+    
+main()        
+```           
