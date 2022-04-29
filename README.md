@@ -81,7 +81,7 @@ def computeDuration(mydata):
     return mydata
 ```
 <p style="text-align:center">
-  <img src=".PERT_CPM/picture/1.PNG"/>
+  <img src="./PERT_CPM/picture/1.PNG"/>
 </p>
   
          
