@@ -43,7 +43,7 @@ import os
 ```         
 ## __Object__         
 ```python      
-#define a class object named task:
+#Define a class object named task:
 class Task(object):
     def __init__(self,activity,predecessors,duration):
         self.activity = activity.upper()   
