@@ -74,13 +74,13 @@ def readData(excelFile):
     return mydata
 ``` 
                  
-__Optimistic time__: the minimum possible time required to accomplish an activity (o) or a path (O), assuming everything proceeds better than is normally expected.
+`Optimistic time`: the minimum possible time required to accomplish an activity (o) or a path (O), assuming everything proceeds better than is normally expected.
          
-__Pessimistic time__: the maximum possible time required to accomplish an activity (p) or a path (P), assuming everything goes wrong (but excluding major catastrophes).
+`Pessimistic time`: the maximum possible time required to accomplish an activity (p) or a path (P), assuming everything goes wrong (but excluding major catastrophes).
          
-__Most likely time__: the best estimate of the time required to accomplish an activity (m) or a path (M), assuming everything proceeds as normal.
+`Most likely time`: the best estimate of the time required to accomplish an activity (m) or a path (M), assuming everything proceeds as normal.
       
-__Expected time__: the best estimate of the time required to accomplish an activity (te) or a path (TE). 
+`Expected time`: the best estimate of the time required to accomplish an activity (te) or a path (TE). 
          
 <p style="text-align:center">
   <img src="./picture/1.PNG"/>
@@ -107,9 +107,9 @@ def creatTask(mydata):
  
 __Determining ES EF with Forwardpass__
          
-__EF(EarlyFinish)__= ES + D(Duration)
+`EF(EarlyFinish)`= ES + D(Duration)
 
-__ES(EarlyStart)__= Max(EF) -> Maximum ES of all pre-jobs
+`ES(EarlyStart)`= Max(EF) -> Maximum ES of all pre-jobs
 
 ```python         
 def forwardPass(taskObject):
