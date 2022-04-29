@@ -106,9 +106,13 @@ def creatTask(mydata):
 ```         
  
 __Determining ES EF with Forwardpass__
+         
 __EF(EarlyFinish)__= ES + D(Duration)
+
 Maximum ES of all pre-jobs
+
 __ES(EarlyStart)__= Max(EF)
+
 ```python         
 def forwardPass(taskObject):
     for task in taskObject:
