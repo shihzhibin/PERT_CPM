@@ -6,7 +6,7 @@
 | 編輯者       |    暱稱         |                      LinkedIn                                                            |
 | :-----------:|:-----------:   |:---------------------------------------------------------------------------------------: |
 |  施智臏      | ZHI-BIN SHIH     | [https://www.linkedin.com/in/zhibin-shih-9a0a711a9/](https://www.linkedin.com/in/zhibin-shih-9a0a711a9/)     
-|  Mr.蔡      |  Louis Tsai       | 
+|  Mr.Tsai    |  Louie Tsai       | 
 
 ## Tutorial of the PERT_CPM
 <details open="open">
