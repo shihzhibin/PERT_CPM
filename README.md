@@ -3,9 +3,9 @@
 
 ### **Team Member**    
 
-| 編輯者       |    暱稱         |                      LinkedIn                                                            |
+| 編輯者       |    暱稱         |                      Email                                                           |
 | :-----------:|:-----------:   |:---------------------------------------------------------------------------------------: |
-|  施智臏      | ZHI-BIN SHIH     | [https://www.linkedin.com/in/zhibin-shih-9a0a711a9/](https://www.linkedin.com/in/zhibin-shih-9a0a711a9/)     
+|  施智臏      | ZHI-BIN SHIH     | [shih.zhi.bin@gmail.com](shih.zhi.bin@gmail.com)     
 |  Mr.Tsai    |  Louie Tsai       | 
 ### **Reference**
 Author:PinoyStat  ,   Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs  
@@ -79,7 +79,8 @@ def computeDuration(mydata):
     mydata["DURATION"] = np.ceil((mydata["OPT"]+ mydata["MOST"]*4 + mydata["PESS"])/6)   
     return mydata
 ```
-
+__Expected time: the best estimate of the time required to accomplish an activity (te) or a path (TE)__
+  
          
          
          
