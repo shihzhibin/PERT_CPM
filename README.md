@@ -93,8 +93,16 @@ def computeDuration(mydata):
     return mydata
 ```
 
-  
-         
-         
+```python 
+#function to creat a task object:  
+def creatTask(mydata):
+    taskObject = []
+    
+    for i in range(len(mydata)):
+        taskObject.append(Task(mydata["ACTIVITY"][i],
+        mydata["PREDECESSORS"][i],mydata["DURATION"][i]))
+        
+    return (taskObject)        
+```         
          
          
