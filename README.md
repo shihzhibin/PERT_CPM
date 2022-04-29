@@ -94,7 +94,7 @@ def computeDuration(mydata):
 ```
 
 ```python 
-#function to creat a task object:  
+#Function to creat a task object:  
 def creatTask(mydata):
     taskObject = []
     
@@ -104,5 +104,24 @@ def creatTask(mydata):
         
     return (taskObject)        
 ```         
-         
-         
+ 
+__Determining ES EF with forward push__
+```python         
+def forwardPass(taskObject):
+    for task in taskObject:
+        if type(task.predecessors) is str: #type string
+            #make the string uppercase
+            task.predecessors = task.predecessors.upper()
+            ef = [] #store the EF of all of the task's predecessors..
+            #get the maximum latestfinish
+            for j in task.predecessors:
+                for t in taskObject:
+                    if t.activity == j :
+                        ef.append(t.earlyfinish)
+                task.earlyStart = max(ef)
+            del ef
+        else:
+            task.earlyStart = 0
+            
+        task.earlyfinish = task.earlyStart + task.duration
+```   
