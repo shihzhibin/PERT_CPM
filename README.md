@@ -131,7 +131,7 @@ def forwardPass(taskObject):
         task.earlyfinish = task.earlyStart + task.duration
 ```   
 
-__Determining Ls LF with Forwardpass__      
+__Determining LS LF with Forwardpass__      
          
          
 ```python
