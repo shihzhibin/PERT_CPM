@@ -65,3 +65,22 @@ class Task(object):
             self.critical = "YES"
 ```
 ## __Function__   
+```python  
+         
+#Get data from excel and return a pandas data frame 
+def readData(excelFile):
+    global mydata
+    mydata = pd.read_csv(excelFile)
+    return mydata
+```  
+```python 
+#Calculate the time spent on the task
+def computeDuration(mydata):
+    mydata["DURATION"] = np.ceil((mydata["OPT"]+ mydata["MOST"]*4 + mydata["PESS"])/6)   
+    return mydata
+```
+
+         
+         
+         
+         
