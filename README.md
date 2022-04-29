@@ -24,7 +24,7 @@ Author:PinoyStat  ,   Youtube: https://www.youtube.com/watch?v=UXPeO2d9nSs
        <ul>
         <li><a href="#package">Input package</a></li>
         <li><a href="#Object">Define a class object named task</a></li>
-        <li><a href="#Function">Use define Function to input data or compute dataframe </a></li>
+        <li><a href="#Function">Define Function to input data or compute data </a></li>
         <li><a href="#Output result">Determine the critical path from the result</a></li>
          
 # __Introduction__
