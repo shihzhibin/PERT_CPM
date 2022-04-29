@@ -3,7 +3,7 @@
 
 ### **Team Member**    
 
-|  編輯者       |    暱稱         |                      Email                                                           |
+|     編輯者       |    暱稱         |                      Email                                                           |
 | :-----------:|:-----------:   |:---------------------------------------------------------------------------------------: |
 |  施智臏      | ZHI-BIN SHIH     | [shih.zhi.bin@gmail.com](shih.zhi.bin@gmail.com)     
 |  Mr.Tsai    |  Louie Tsai       | 
