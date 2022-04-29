@@ -74,15 +74,16 @@ def readData(excelFile):
     return mydata
 ``` 
 __Expected time: the best estimate of the time required to accomplish an activity (te) or a path (TE)__
+<p style="text-align:center">
+  <img src="./picture/1.PNG"/>
+</p>
 ```python 
 #Calculate the time spent on the task
 def computeDuration(mydata):
     mydata["DURATION"] = np.ceil((mydata["OPT"]+ mydata["MOST"]*4 + mydata["PESS"])/6)   
     return mydata
 ```
-<p style="text-align:center">
-  <img src="./picture/1.PNG"/>
-</p>
+
   
          
          
