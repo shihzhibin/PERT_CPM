@@ -73,11 +73,14 @@ def readData(excelFile):
     mydata = pd.read_csv(excelFile)
     return mydata
 ``` 
+                 
+__Optimistic time__: the minimum possible time required to accomplish an activity (o) or a path (O), assuming everything proceeds better than is normally expected.
          
-__Expected time__: the best estimate of the time required to accomplish an activity (te) or a path (TE)
-__optimistic time__: the minimum possible time required to accomplish an activity (o) or a path (O), assuming everything proceeds better than is normally expected
-__pessimistic time__: the maximum possible time required to accomplish an activity (p) or a path (P), assuming everything goes wrong (but excluding major catastrophes).
-__most likely time__: the best estimate of the time required to accomplish an activity (m) or a path (M), assuming everything proceeds as normal.
+__Pessimistic time__: the maximum possible time required to accomplish an activity (p) or a path (P), assuming everything goes wrong (but excluding major catastrophes).
+         
+__Most likely time__: the best estimate of the time required to accomplish an activity (m) or a path (M), assuming everything proceeds as normal.
+      
+__Expected time__: the best estimate of the time required to accomplish an activity (te) or a path (TE). 
          
 <p style="text-align:center">
   <img src="./picture/1.PNG"/>
