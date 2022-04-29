@@ -46,7 +46,7 @@ import os
 #define a class object named task:
 class Task(object):
     def __init__(self,activity,predecessors,duration):
-        self.activity = activity.upper()
+        self.activity = activity.upper()   
         self.predecessors = predecessors
         self.duration = duration
         self.earlyStart = 0
@@ -56,7 +56,7 @@ class Task(object):
         self.lastfinish = 0
         self.slack = 0
         self.critical = ""
-
+#Calculate the slack(Slack Time = LST – EST)
     def computeSlack(self):
         self.slack = self.lastfinish - self.earlyfinish
         if self.slack > 0 :
