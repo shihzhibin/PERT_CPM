@@ -72,14 +72,17 @@ def readData(excelFile):
     global mydata
     mydata = pd.read_csv(excelFile)
     return mydata
-```  
+``` 
+__Expected time: the best estimate of the time required to accomplish an activity (te) or a path (TE)__
 ```python 
 #Calculate the time spent on the task
 def computeDuration(mydata):
     mydata["DURATION"] = np.ceil((mydata["OPT"]+ mydata["MOST"]*4 + mydata["PESS"])/6)   
     return mydata
 ```
-__Expected time: the best estimate of the time required to accomplish an activity (te) or a path (TE)__
+<p style="text-align:center">
+  <img src=".PERT_CPM/picture/1.PNG"/>
+</p>
   
          
          
